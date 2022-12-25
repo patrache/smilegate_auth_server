@@ -9,7 +9,8 @@ export default defineConfig({
         rollupOptions: {
         input: {
             main: resolve(root, 'index.html'),
-            signin: resolve(root, 'html', 'signIn.html')
+            signin: resolve(root, 'html', 'signIn.html'),
+            mainPageJs: resolve(root, 'js', 'mainpage.js')
         }
         }
     }

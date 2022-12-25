@@ -34,8 +34,8 @@
               <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Docs</a>
             </nav>
             <div class="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-              <a href="./html/signIn.html" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">Sign in</a>
-              <a href="./html/signUp.html" class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Sign up</a>
+              <a id="signInBtn" href="./html/signIn.html" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">Sign in</a>
+              <a id="signUpBtn" href="./html/signUp.html" class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Sign up</a>
             </div>
         </div>
       </div>
@@ -54,15 +54,16 @@
                 <h1 class="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">Smilegate winter DevCamp</h1>
                 <p class="mt-6 text-lg leading-8 text-gray-600 sm:text-center">충북지역 B-tree 김상수 인증서버 제작 개인 과제 메인페이지입니다. 테일윈드를 잘 쓰고 싶었는데 복붙만 하고 있어서 마음이 아프네요</p>
                 <div class="mt-8 flex gap-x-4 sm:justify-center">
-                  <a href="#" class="inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700">
-                    기능
+                  <a href="#" id="getBtn" class="inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700">
+                    GET
                     <span class="text-indigo-200" aria-hidden="true">&rarr;</span>
                   </a>
-                  <a href="#" class="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                    없음
+                  <a href="#" id="postBtn" class="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                    POST
                     <span class="text-gray-400" aria-hidden="true">&rarr;</span>
                   </a>
                 </div>
+                <div id="result" class="text-center mt-6">test</div>
               </div>
               <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
                 <svg class="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,6 +81,7 @@
         </div>
       </main>
     </div>
-    <script type="module" src="./main.js"></script>
+    
+    <script type="module" src="./js/page/mainPage.js"></script>
   </body>
 </html>
